@@ -1,6 +1,6 @@
 document.query
 
-//DOM js
+//Document Object Model {DOM} js
 var heading =document.firstElementChild.lastElementChild.firstElementChild
 
 heading.style.color = "blue";
@@ -38,11 +38,24 @@ document.querySelectorAll(".list")[1].style.color = "green";
 
 document.querySelectorAll("li a")[0].style.color = "red";
 
+/************************************************************/
+//Manipulating and Changing Styles of HTML Elements with Javascript
 
+document.getElementById("heading").style.backgroundColor = "greenyellow";
 
+//The Separation of Concerns Structure vs Style vs Behaviour
 
+document.querySelectorAll("li")[2].classList.add("huge");
+document.querySelector("button").classList.add("huge");
 
+//Text Manipulation and the Text Content Property
 
+document.querySelector("h1").innerHTML = "<em>Good Bye<em>"
+
+console.log (document.querySelector("h1").innerHTML);
+console.log (document.querySelector("h1").textContent);
+
+//Manipulating HTML Element Attributes
 
 
 
